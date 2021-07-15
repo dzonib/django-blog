@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock %}
+
+{% block title %}
+    This post title
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post title</h2>
+        <article>
+            <img src="{% static "blog/images/1111.jpg" %}" alt="Post title">
+            <address>By Kingkong</address>
+            <div>
+                <time>July 10</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam error eveniet
+            impedit incidunt laborum magni perspiciatis quo suscipit, vel velit!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Accusantium aspernatur commodi delectus dolor dolorem ducimus earum eligendi error eveniet excepturi id incidunt itaque,
+        minima natus quae quaerat quos recusandae saepe sapiente, sequi sunt veritatis voluptates!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid architecto asperiores corporis
+        delectus enim exercitationem expedita harum, illo ipsam iste libero magnam maiores minus molestiae natus
+        nesciunt nihil nisi obcaecati officia omnis perferendis placeat provident quasi quibusdam quis recusandae repellendus
+        reprehenderit tempore temporibus vel, velit vitae voluptatibus. Corporis, quis.</p>
+    </main>
+{% endblock %}
